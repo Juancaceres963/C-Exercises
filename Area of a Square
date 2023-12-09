@@ -1,0 +1,15 @@
+using System;
+
+public class Kata
+{
+  public static double SquareArea(double A)
+  {
+    //Circlule = 2 * pi * radio
+    //arc = 2 * pi * radio / 4
+    //arc * 4 = 2 * pi * radio
+    //2 * pi * radio = arc * 4
+    //radio = (arc * 4) / (2 * pi)
+    double radio = (A * 4) / (2 * Math.PI);
+    return Math.Round(Math.Pow(radio, 2), 2);
+  }
+}
